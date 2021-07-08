@@ -1,0 +1,132 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.batik{
+    height: 100vh;
+    background-image: url('gbk style/batik.jfif');
+    background-size: contain;
+}
+.gradient{
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.77),transparent, rgba(0, 0, 0, 0.77), transparent, rgba(0, 0, 0, 0.77), transparent, rgba(0, 0, 0, 0.77));
+}
+section{
+    height: 100vh;
+    
+    font-family: consolas;
+}
+
+.score{
+    color: whitesmoke;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score h2{
+    font-size: 30px;
+}
+
+.score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.intro{
+    color: whitesmoke;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+
+.intro h1{
+    font-size: 50px;
+    font-family: 'Tourney', cursive;
+}
+
+.intro button,.pilihan button{
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 20px;
+    background: rgb(45,117,96);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.match{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60vh;
+    width: 70%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.winner {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: consolas;
+    letter-spacing: 5px;
+    font-size: 50px;
+    border-radius: 50px;
+    background: rgba(135, 207, 235, 0.3);
+}
+
+
+
+.tangan, .pilihan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tangan{
+    position: relative;
+    left: 15%;
+    height: 45vh;
+    width: 70%;
+    justify-content: space-around;
+}
+.tangan-komputer{
+    position: relative;
+    left: 10%;
+}
+
+img{
+    max-height: 40vh;
+    size: contain;
+    padding: 20px;
+    background: rgba(135, 207, 235, 0.3);
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+    box-shadow: rgb(135, 207, 235) 0 0 5px ;
+}
+
+.tangan-pemain{
+    transform: rotateX(180deg);
+}
+.tangan-komputer{
+    transform: rotateY(180deg) rotateX(180deg);
+}
+
+
+.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+}
+.fadeIn{
+    opacity: 0.9;
+    pointer-events: all;
+}
